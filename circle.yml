@@ -13,6 +13,6 @@ test:
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
     - ls -l $CIRCLE_TEST_REPORTS/junit/
-    - ls -l target/surefire-reports target/surefire-reports
+    - ls -l target/surefire-reports target/failsafe-reports
     #- find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ 
     #- find . -name *.*xml \;
