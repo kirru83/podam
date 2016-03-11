@@ -14,7 +14,5 @@ test:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
     - ls -l $CIRCLE_TEST_REPORTS/junit/
     - ls -l target/failsafe-reports
-    #- find . -type f -regex ".*/target/failsafe-reports/.*xml" | xargs -n1 -I {} -exec cp {} $CIRCLE_TEST_REPORTS/junit/ 
-    #- find . -type f -regex ".*/target/failsafe-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
+    - find . -type f -regex ".*/target/failsafe-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
     #- ls -l $CIRCLE_TEST_REPORTS/junit/
-    #- find . -name *.*xml
