@@ -15,4 +15,5 @@ test:
     - ls -l $CIRCLE_TEST_REPORTS/junit/
     - ls -l target/surefire-reports target/failsafe-reports
     - find . -type f -regex ".*/target/surefire-reports/.*xml" | xargs -n1 -I {} -exec cp {} $CIRCLE_TEST_REPORTS/junit/ 
-    - find . -name *.*xml \;
+    - ls -l $CIRCLE_TEST_REPORTS/junit/
+    - find . -name *.*xml
