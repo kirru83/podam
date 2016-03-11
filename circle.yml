@@ -8,6 +8,8 @@ general:
      - target
      
 test:
+  override:
+    - mvn clean install
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
     - ls -l $CIRCLE_TEST_REPORTS/junit/
